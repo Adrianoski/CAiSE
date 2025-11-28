@@ -43,8 +43,6 @@ pip install -r requirements-edge.txt
 │
 ├── edge_client/               # Edge device utilities
 │   ├── client.py              # Script to request model pruning
-│   ├── llm_config_applier.py  # Apply JSON config to LLMs
-│   └── model_loader.py        # Load TorchScript CNNs
 │
 ├── examples/                  # Usage examples
 │   ├── edge_llm_example.txt
