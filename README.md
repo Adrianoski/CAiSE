@@ -108,7 +108,7 @@ import torch
 
 # Request pruned model
 payload = {
-    "model_name": "resnet50",
+    "model_name": "VGG16",
     "task": "image-classification",
     "pruning_ratio": 0.25
 }
@@ -184,8 +184,7 @@ Health check endpoint.
 **Delivery**: JSON configuration (~5-20 KB)
 
 ### CNNs (ImproveNet Engine)
-- ResNet, VGG, DenseNet
-- EfficientNet, MobileNet
+- VGG16, VGG19
 - AlexNet
 
 **Delivery**: TorchScript model (~20-100 MB)
