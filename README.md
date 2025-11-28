@@ -39,13 +39,6 @@ pip install -r requirements-edge.txt
 ├── cloud_service/             # Core cloud logic and APIs
 │   ├── app.py                 # Flask server - launch this to start the service
 │   ├── dispatcher.py          # Model type detection and routing logic
-│   ├── engines/
-│   │   ├── sire/              # LLM pruning engine (returns JSON config)
-│   │   │   ├── analyzer.py
-│   │   │   └── config_generator.py
-│   │   └── improvenet/        # CNN pruning engine (returns TorchScript)
-│   │       ├── pruner.py
-│   │       └── torchscript_exporter.py
 │   └── storage/               # Temporary storage for pruned CNN models
 │
 ├── edge_client/               # Edge device utilities
@@ -54,11 +47,8 @@ pip install -r requirements-edge.txt
 │   └── model_loader.py        # Load TorchScript CNNs
 │
 ├── examples/                  # Usage examples
-│   ├── edge_llm_example.py
-│   └── edge_cnn_example.py
-│
-├── requirements-cloud.txt     # Cloud service dependencies
-├── requirements-edge.txt      # Edge device dependencies
+│   ├── edge_llm_example.txt
+│   └── edge_cnn_example.txt
 └── README.md
 ```
 
