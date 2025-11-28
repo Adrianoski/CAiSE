@@ -70,7 +70,7 @@ from edge_client.llm_config_applier import apply_pruning_config
 
 # Request pruning configuration
 payload = {
-    "model_name": "bert-base-uncased",
+    "model_name": "Qwen2.5-3B",
     "task": "text-classification",
     "pruning_ratio": 0.2
 }
@@ -85,7 +85,7 @@ print(f"Delivery: {config['delivery_method']}")  # json_config
 print(f"Size: {config['file_size_kb']} KB")
 
 # Download original model and apply config
-model = AutoModel.from_pretrained("bert-base-uncased")
+model = AutoModel.from_pretrained("Qen2.5-3B")
 pruned_model = apply_pruning_config(model, config['pruning_config'])
 ```
 
@@ -165,9 +165,9 @@ Health check endpoint.
 ## Supported Models
 
 ### LLMs (SiRE Engine)
-- BERT, RoBERTa, DistilBERT, ELECTRA
-- GPT-2, GPT-Neo
-- T5, BART
+- QWEN
+- MISTRAL
+- LLAMA
 
 **Delivery**: JSON configuration (~5-20 KB)
 
