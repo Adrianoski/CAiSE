@@ -9,7 +9,7 @@ Designed for computing continuum environments, the system supports both **Transf
 ## Architecture Overview
 ```
 Edge Device → Cloud Service → Dispatcher → SiRE (LLM) → JSON config (~KB)
-                                        → ImproveNet (CNN) → TorchScript model (~MB)
+                                         → ImproveNet (CNN) → TorchScript model (~MB)
 ```
 
 - **Dispatcher**: Detects model architecture and routes to appropriate engine
