@@ -4,7 +4,7 @@
 
 This framework is a lightweight and modular system that enables neural network pruning via a cloud-edge architecture. Edge devices send model names and tasks to the server, which intelligently dispatches requests to the appropriate pruning engine based on model architecture. The system returns either a JSON pruning configuration (for LLMs) or a ready-to-deploy TorchScript model (for CNNs), all through a simple asynchronous API.
 
-Designed for computing continuum environments, the system supports both **Transformer-based LLMs** (BERT, GPT, RoBERTa) and **CNNs** (ResNet, VGG, EfficientNet) from Hugging Face Hub.
+Designed for computing continuum environments, the system supports both **Transformer-based LLMs** (QWEN, LLAMA, MISTRAL) and **CNNs** (VGG16, VGG19, AlexNet) from Hugging Face Hub.
 
 ## Architecture Overview
 ```
