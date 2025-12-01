@@ -18,21 +18,6 @@ Edge Device → Cloud Service → Dispatcher → SiRE (LLM) → JSON config (~KB
 
 ## Getting Started
 
-### 1. Clone the repository
-```bash
-git clone https://github.com/your-username/cloud-edge-pruning-framework.git
-cd cloud-edge-pruning-framework
-```
-
-### 2. Install dependencies
-```bash
-# For cloud service
-pip install -r requirements-cloud.txt
-
-# For edge devices (lightweight)
-pip install -r requirements-edge.txt
-```
-
 ## Project Structure
 ```
 .
@@ -44,9 +29,9 @@ pip install -r requirements-edge.txt
 ├── edge_client/               # Edge device utilities
 │   ├── client.py              # Script to request model pruning
 │
-├── examples/                  # Usage examples
-│   ├── edge_llm_example.txt
-│   └── edge_cnn_example.txt
+├── experiments/                  # Usage examples
+│   ├── qwen.txt
+│   └── llama.txt
 └── README.md
 ```
 
