@@ -35,17 +35,7 @@ Edge Device → Cloud Service → Dispatcher → SiRE (LLM) → JSON config (~KB
 └── README.md
 ```
 
-## How to Run the Cloud Service
-
-Navigate to the cloud_service directory and launch the server:
-```bash
-cd cloud_service
-python app.py --port 8000
-```
-
-The server will be ready to receive pruning requests via REST API.
-
-## Edge Client Usage
+## Edge Client
 
 ### For LLMs (Receive JSON Configuration)
 ```python
