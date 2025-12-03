@@ -207,13 +207,11 @@ LlamaForCausalLM(
 ================================================================================
 [RUN] pruning at 14%
 ================================================================================
-PERC30 Total heads overall: 0 -> target drop ~0
-
 Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
 Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  1.93it/s]
 Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  2.64it/s]
 Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  2.50it/s]
-PERC30 Candidate MLP groups from bottom 14% of ALL groups: 119
+PERC30 Candidate MLP groups from bottom 14% of ALL groups: 98
 [PRUNE][HEADS]PERC30 Done.
 [PRUNE][MLP]PERC30 Removing 119 MLP neuron groups...
 
